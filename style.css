@@ -1,0 +1,255 @@
+@import './vendor/fonts/fonts.css';
+
+* {
+  outline: 1px solid red;
+}
+
+body {
+  background-color: #795eaa;
+  background-size: contain;
+  height: 100vh;
+  background-repeat: no-repeat;
+  font-family: 'Merriweather', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 0 auto;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.screensaver {
+  background-color: #795eaa;
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.screensaver_task {
+  font-size: 24px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.screensaver_queen {
+  width: 600px;
+}
+.screensaver_text {
+  width: 90%;
+  padding-top: 30px;
+  word-wrap: normal;
+  margin-bottom: 60px;
+}
+
+.screensaver_input {
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: center;
+  margin-right: 60px;
+}
+
+.screensaver_btn {
+  width: 120px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 1;
+  background-color: rgb(250, 206, 7);
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px black;
+  border: none;
+}
+
+.screensaver_clue {
+  color: white;
+  /* -webkit-text-stroke: 3px solid red; */
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  padding: 0;
+  margin: 0;
+  background-color: #c26242;
+}
+
+.main_note {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c26242;
+}
+
+.main_note-one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  /* position: relative; */
+}
+
+.main_note-two {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.main_note-three {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.main_note-four {
+  background-color: #c26242;
+  grid-column: 2/3;
+  grid-row: 1 / 4;
+  align-self: center;
+  justify-self: center;
+  /* background-image: url(./image/dragon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 400px; */
+}
+
+.main_note-five {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.main_note-six {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.main_note-seven {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.main_note-one__heart {
+  background-image: url('./image/heart.png');
+  background-size: cover;
+  width: 70px;
+  height: 50px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px black;
+  border: none;
+  background-color: #e2bcd1;
+}
+
+.main_note__one-btn {
+  position: absolute;
+  top: 30px;
+  width: 100px;
+  height: 44px;
+  font-family: 'Merriweather', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  background-color: rgb(250, 206, 7);
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px black;
+  border: none;
+}
+
+.main_dragon {
+  width: 488px;
+}
+
+.main_img {
+  padding-top: 60px;
+  width: 210px;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 0 auto;
+  padding: 8px 10px;
+  background-color: #c26242;
+}
+
+label {
+  padding-right: 10px;
+  font-size: 1rem;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  background-color: #c26242;
+  height: 60px;
+}
+
+progress {
+  height: 40px;
+  accent-color: rgb(255, 255, 0);
+}
+
+.progress__heart {
+  height: 50px;
+  background-size: cover;
+  height: 50px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px black;
+  border: none;
+  background-color: #e2bcd1;
+}
+
+.progress__live {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  top: 12px;
+  left: 54px;
+}
+
+.progress__live-dragon {
+  position: relative;
+}
+
+#dragon {
+  margin: 0 30px 0 10px;
+}
+
+.clue {
+  font-family: 'Merriweather', Arial, sans-serif;
+  font-size: 80px;
+  line-height: 1.3;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  border: 3px solid #000;
+  position: absolute;
+  bottom: 130px;
+  box-shadow: 3px 3px 20px black;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.main_piano {
+  width: 400px;
+  height: 120px;
+  background-color: white;
+}
